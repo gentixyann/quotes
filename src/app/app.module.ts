@@ -1,3 +1,4 @@
+import { TabsPage } from './../pages/tabs/tabs';
 import { SettingsPage } from './../pages/settings/settings';
 import { QuotePage } from './../pages/quote/quote';
 import { QuotesPage } from './../pages/quotes/quotes';
@@ -18,7 +19,8 @@ import { MyApp } from './app.component';
     LibraryPage,
     QuotesPage,
     QuotePage,
-    SettingsPage
+    SettingsPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { MyApp } from './app.component';
     LibraryPage,
     QuotesPage,
     QuotePage,
-    SettingsPage
+    SettingsPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
