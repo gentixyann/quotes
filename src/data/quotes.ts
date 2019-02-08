@@ -1,6 +1,6 @@
 export default [
   {
-    category: 'inspirational',
+    category: 'inspirational quotes',
     quotes: [
       {
         id: '1',
