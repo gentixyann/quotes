@@ -23,14 +23,17 @@ export class FavoritesPage {
     modal.present();
     modal.onDidDismiss((remove: boolean) => {
       if (remove) {
-        this.quotesService.removeQuoteFromFavorites(quote);
+        this.onRemoveFromFavorites(quote);
+      }
+    }); 
+  }
+
+  onRemoveFromFavorites(quote: Quote){
+    this.quotesService.removeQuoteFromFavorites(quote);
         const position = this.quotes.findIndex((quoteEl: Quote) => {
           return quoteEl.id == quote.id;
         });
         this.quotes.splice(position, 1);
-      }
-    });
-    
   }
 
 }
