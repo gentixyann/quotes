@@ -45,8 +45,15 @@ export class QuotesPage implements OnInit{
         }
       ]
     });
-
     alert.present();
   }
+
+  onRemoveFromFavorites(quote: Quote){
+
+  };
+
+  isFavorite(quote: Quote){
+
+  };
  
 }
